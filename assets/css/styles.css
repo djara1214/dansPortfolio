@@ -373,37 +373,76 @@ li {
 }
 .work__container {
   row-gap: 2rem;
+  
 }
 .work__img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
-  overflow: hidden;
+  overflow: visible;
+  position: relative;
 }
 .work__img img {
-  transition: 1s;
+  transition: 1.5s;
+  display: block;
 }
 .work__img img:hover {
-  transform: scale(1.1);
+  transform: scale(4.88);
+}
+.work__item {
+  display: flex; /* Align image and text horizontally */
+  align-items: center; /* Align items vertically within the item */
+  gap: 1rem; /* Space between the image and text */
+  /* position: relative; */
+}
+.work__subtitle {
+  margin-bottom: var(--mb-2);
+  z-index: 2;
+}
+.work__text {
+  flex: 1;
+  width: 650px; /* Adjust text block width as needed */
+  font-size: 1rem; /* Adjust text size */
+  z-index: 1;
+}
+
+.work__text p {
+  margin: 0; /* Remove default margin */
 }
 
 /* ===== CONTACT =====*/
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-);
+
+
+.contact__section_icons{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;  
 }
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.contact__icon {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+.contact__icon:hover{
+  transform: scale(2.2);
+
+}
+.contact__text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* width: 400px; Adjust text block width as needed */
+  font-size: 1rem; /* Adjust text size */
+  margin-top: 10px;
+  /* z-index: 1; */
+  /* align-content: center; */
+}
+
+.contact__text p {
+  margin: 0; /* Remove default margin */
 }
 
 /* ===== FOOTER =====*/
@@ -416,18 +455,11 @@ li {
 }
 .footer__title {
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-1);
 }
-.footer__social {
-  margin-bottom: var(--mb-4);
-}
-.footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0 var(--mb-2);
-}
-.footer__copy {
-  font-size: var(--smaller-font-size);
+.footer__year{
+  font-size: 1rem;
+  margin-bottom: var(--mb-3)
 }
 
 /* ===== MEDIA QUERIES=====*/

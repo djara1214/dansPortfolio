@@ -26,8 +26,8 @@
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#Projects" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <!-- <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li> -->
                     </ul>
                 </div>
 
@@ -43,7 +43,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Hey,<br>I'm <span class="home__title-color">Danny</span><br> I code</h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#contact" class="button">contact info</a>
                 </div> Do you hire people? <br>     Hire me :)
 
                 <div class="home__social">
@@ -339,40 +339,66 @@
                 </div>
             </section>
 
-            <!-- ===== WORK =====
-            <section class="work section" id="Projects">
+            <!-- Projects -->
+            <section class="work section" id="projects">
                 <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
+                    <div class="work__item"> 
+                    <a href="https://github.com/djara1214/LegitOrBit"class="work__img" target="_blank">
+                        <img src="assets/img/LOB_sidebySide.png" alt="">
                     </a>
+                    </div>
+                    <div>
+                        <h2 class="work__subtitle">Legit or Bit</h2>
+                        <p class="work__text"> In many developing nations, cellphone users often access the internet through subsidized plans offered by companies like Meta. 
+                            These plans are attractive due to their low costs, providing unlimited access to Meta’s services while offering minimal data for other applications. 
+                            But is this truly a benefit, or is it a way to control and limit access? <br> To address this, 
+                            I developed a WhatsApp bot that enables users to fact-check and find related information for any news article link or text submission, 
+                            all without leaving the WhatsApp app. This project was made possible with the support of Twilio, Claimbusters, and the Google Claims API.
+                        </p>           
+                    </div>
                 </div>
-            </section> -->
+
+                <div class="work__container bd-grid">
+                    <div class="work__item"> 
+                    <a href="https://github.com/djara1214/NycStravaHighlights"class="work__img" target="_blank">
+                        <img src="assets/img/stravaProPicExample.png" alt="">
+                    </a>
+                    </div>
+                    <div>
+                        <h2 class="work__subtitle">Nyc's Fastest Strava Bikers</h2>
+                        <p class="work__text"> I’ve always been frustrated with Strava’s site, especially how it limits access to the vast amount of data they collect on users' rides. 
+                            Finding all segments at once is nearly impossible. To address this, I created a page that displays all cycling segments in NYC along 
+                            with the top 25 riders for each segment. This tool allows users to plan routes to maximize segment visits, aiding them in aiming for sub-25 times to be featured 
+                            on the main leaderboard page. With just a click, users can access all segments and view engaging data visualizations, 
+                            including riders with the most sub-25 positions, placement statistics, density charts for top riders, 
+                            and the times of year when the fastest rides occur. 
+                            This project helps Strava riders optimize their segment performances to try to be the fastest in NYC. 
+                        </p>           
+                    </div>
+                </div>
+            </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
+                <div class='contact__section_icons'>
+                    <a href="mailto:dannyjaramillo@protonmail.com"> <i class='bx bx-mail-send contact__icon'></i></a>
+                    <a href="https://www.linkedin.com/in/danny-jaramillo-915b75236/" class="contact__icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/djara1214" class="contact__icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.strava.com/athletes/63754877" class="contact__icon" target="_blank"><i class='bx bx-cycling' ></i></a>
+                </div>
+                <div class='contact__text'>
+                    here you can either shoot me an email, dm me on linked-in, look at my code, or take a look at my rides <br> and you're always welcome to come back for any updates
                 </div>
             </section>
         </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Danny</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/danny-jaramillo-915b75236/" class="footer__icon" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                <a href="https://github.com/djara1214" class="footer__icon" target="_blank"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.strava.com/athletes/63754877" class="footer__icon" target="_blank"><i class='bx bx-cycling' ></i></a>
-            </div>
+            <p class="footer__title">Danny Jaramillo</p>
+            <p class="footer__year">2024</p>
         </footer>
 
 
